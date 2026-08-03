@@ -2,6 +2,9 @@
   :root { --space-page: 2rem; }
   .hero-navigation__inner { display: flex; gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; }
   .hero-navigation__card { flex: 0 0 min(18rem, calc(100vw - 4rem)); scroll-snap-align: start; }
+  .portfolio-showcase__layout { grid-template-columns: minmax(0, 1.45fr) minmax(13rem, 1fr); }
+  .portfolio-showcase__proof { grid-column: 1 / -1; }
+  .portfolio-showcase__proof ul { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 @media (max-width: 48rem) {
@@ -11,6 +14,10 @@
   .hero__media { width: min(100%, 34rem); }
   .hero__expertise { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero__expertise li { font-size: 0.72rem; }
+  .portfolio-showcase__layout { grid-template-columns: 1fr; }
+  .portfolio-showcase__videos { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+  .portfolio-showcase__proof { grid-column: auto; }
+  .portfolio-showcase__proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 68.749rem) {
@@ -31,6 +38,7 @@
   .hero__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
   .hero__cta--text { grid-column: 1 / -1; }
   .hero-navigation__card { flex: 0 0 min(18rem, calc(100vw - 3.5rem)); scroll-snap-align: start; }
+  .portfolio-showcase__videos, .portfolio-showcase__proof ul { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 26rem) {

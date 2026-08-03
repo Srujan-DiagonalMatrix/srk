@@ -1,6 +1,9 @@
 import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
 import heroBackground from '../assets/backgrounds/hero-background.webp'
+import architectureThumbnail from '../assets/expertise/multi-agent.webp'
+import orchestrationThumbnail from '../assets/expertise/automation.webp'
+import systemsThumbnail from '../assets/expertise/system-design.webp'
 
 export const portfolioData = {
   owner: 'Srujan',
@@ -62,6 +65,43 @@ export const portfolioData = {
       href: '#about',
     },
   ],
+  portfolioShowcase: {
+    title: 'Can Srujan design & build complex AI systems?',
+    description:
+      'I architect scalable multi-agent systems that plan, collaborate, and execute tasks across tools and APIs. My solutions are built for reliability, observability, and scale.',
+    videos: [
+      {
+        title: 'Multi-Agent Architecture',
+        subtitle: '',
+        thumbnail: architectureThumbnail,
+        duration: '1:49',
+        videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
+        size: 'large',
+      },
+      {
+        title: 'Multi-Agent System Demo',
+        subtitle: '',
+        thumbnail: systemsThumbnail,
+        duration: '0:58',
+        videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
+        size: 'small',
+      },
+      {
+        title: 'Workflow Orchestration',
+        subtitle: '',
+        thumbnail: orchestrationThumbnail,
+        duration: '0:46',
+        videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
+        size: 'small',
+      },
+    ],
+    proofPoints: [
+      { label: 'Live system demos and walkthroughs', icon: 'demos' },
+      { label: 'Architecture diagrams & documentation', icon: 'documentation' },
+      { label: 'Production-ready integrations', icon: 'integrations' },
+      { label: 'Scalable, modular & future-proof', icon: 'scalable' },
+    ],
+  },
   header: {
     brand: {
       name: 'Srujan',
