@@ -2,6 +2,18 @@ import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
 import heroBackground from '../assets/backgrounds/hero-background.webp'
 
+const architectureVideoId = 'FwOTs4UxQS4'
+const architectureThumbnail =
+  'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail2.jpg'
+const architectureVideoUrl = `https://www.youtube.com/watch?v=${architectureVideoId}`
+const systemDemoThumbnail =
+  'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail3.jpg'
+const systemDemoVideoUrl =
+  'https://www.youtube.com/watch?v=d0wUM8hIaxE&pp=ygUQQUkgQWdlbnQgdHJhaWxlcg%3D%3D&sttick=1'
+const orchestrationThumbnail =
+  'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail1.jpg'
+const orchestrationVideoUrl = 'https://www.youtube.com/watch?v=3ERbYtUwHE8'
+
 export const portfolioData = {
   owner: 'Srujan',
   introduction: 'A thoughtful foundation for a personal portfolio.',
@@ -62,6 +74,43 @@ export const portfolioData = {
       href: '#about',
     },
   ],
+  portfolioShowcase: {
+    title: 'Can Srujan design & build complex AI systems?',
+    description:
+      'I architect scalable multi-agent systems that plan, collaborate, and execute tasks across tools and APIs. My solutions are built for reliability, observability, and scale.',
+    videos: [
+      {
+        title: 'Multi-Agent Architecture',
+        subtitle: '',
+        thumbnail: architectureThumbnail,
+        duration: '1:49',
+        videoUrl: architectureVideoUrl,
+        size: 'large',
+      },
+      {
+        title: 'Multi-Agent System Demo',
+        subtitle: '',
+        thumbnail: systemDemoThumbnail,
+        duration: '0:58',
+        videoUrl: systemDemoVideoUrl,
+        size: 'small',
+      },
+      {
+        title: 'Workflow Orchestration',
+        subtitle: '',
+        thumbnail: orchestrationThumbnail,
+        duration: '0:46',
+        videoUrl: orchestrationVideoUrl,
+        size: 'small',
+      },
+    ],
+    proofPoints: [
+      { label: 'Live system demos and walkthroughs', icon: 'demos' },
+      { label: 'Architecture diagrams & documentation', icon: 'documentation' },
+      { label: 'Production-ready integrations', icon: 'integrations' },
+      { label: 'Scalable, modular & future-proof', icon: 'scalable' },
+    ],
+  },
   header: {
     brand: {
       name: 'Srujan',
