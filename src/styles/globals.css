@@ -247,8 +247,7 @@ p {
 .hero__cta--primary { color: #10202e; background: var(--color-gold); }
 .hero__cta--secondary { border-color: var(--color-navy); color: var(--color-navy); }
 .hero__cta--text { padding-inline: 0.65rem; color: #3e4c58; }
-.hero__portrait-wrap { position: relative; width: 100%; max-width: 24rem; margin-top: 0.25rem; justify-self: end; }
-.hero__portrait-wrap::before { position: absolute; z-index: 0; inset: -1.2rem 1.2rem 1.2rem -1.2rem; border: 1px solid rgb(200 155 60 / 45%); border-radius: 1rem; content: ''; }
+.hero__portrait-wrap { width: 100%; max-width: 24rem; margin-top: 0.25rem; padding: 1rem; border: 1px solid rgb(200 155 60 / 45%); border-radius: 1rem; justify-self: end; }
 .hero__portrait { position: relative; z-index: 1; width: 100%; max-height: 44rem; border-radius: 1rem; box-shadow: 0 1.5rem 3rem rgb(11 31 51 / 17%); filter: saturate(0.88) sepia(0.08); object-fit: cover; object-position: center 28%; aspect-ratio: 4 / 5; }
 
 .video-modal { position: fixed; z-index: 100; inset: 0; display: grid; padding: 1.5rem; background: rgb(5 14 23 / 82%); place-items: center; }
