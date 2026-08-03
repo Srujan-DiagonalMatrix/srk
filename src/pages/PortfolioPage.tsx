@@ -1,4 +1,5 @@
 import { Header } from '../components/Header'
+import { HeroNavigation } from '../components/HeroNavigation'
 import { HeroSection } from '../components/HeroSection'
 
 export function PortfolioPage() {
@@ -8,6 +9,7 @@ export function PortfolioPage() {
       <Header />
       <main id="main-content" className="page-main" tabIndex={-1}>
         <HeroSection />
+        <HeroNavigation />
       </main>
     </div>
   )
