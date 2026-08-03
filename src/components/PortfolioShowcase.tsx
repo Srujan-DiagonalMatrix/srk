@@ -12,6 +12,7 @@ import {
 import { portfolioData } from '../data/portfolioData'
 import { CapabilityPillars } from './CapabilityPillars'
 import { CoreSkills } from './CoreSkills'
+import { ContactCallout } from './ContactCallout'
 import { FeaturedCaseStudies } from './FeaturedCaseStudies'
 import { LeadershipCustomerSkills } from './LeadershipCustomerSkills'
 import { VideoCard } from './VideoCard'
@@ -101,6 +102,7 @@ export function PortfolioShowcase() {
       <CoreSkills />
       <FeaturedCaseStudies />
       <LeadershipCustomerSkills />
+      <ContactCallout />
     </>
   )
 }
