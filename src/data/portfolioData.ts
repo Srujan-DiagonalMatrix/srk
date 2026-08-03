@@ -26,7 +26,7 @@ export const portfolioData = {
       subtitle: '',
       thumbnail: heroThumbnail,
       duration: '1:28',
-      videoUrl: null,
+      videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
       size: 'large',
     },
     portrait: {

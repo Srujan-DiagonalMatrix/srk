@@ -10,6 +10,17 @@ type VideoModalProps = {
 
 const FOCUSABLE = 'button, [href], iframe, video, [tabindex]:not([tabindex="-1"])'
 
+function getYouTubeEmbedUrl(videoUrl: string) {
+  const url = new URL(videoUrl)
+  const videoId = url.hostname === 'youtu.be'
+    ? url.pathname.slice(1)
+    : url.searchParams.get('v')
+
+  return videoId
+    ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0`
+    : null
+}
+
 export function VideoModal({ isOpen, onClose, title, videoUrl }: VideoModalProps) {
   const titleId = useId()
   const dialogRef = useRef<HTMLDivElement>(null)
@@ -48,6 +59,8 @@ export function VideoModal({ isOpen, onClose, title, videoUrl }: VideoModalProps
 
   if (!isOpen) return null
 
+  const youtubeEmbedUrl = getYouTubeEmbedUrl(videoUrl)
+
   return (
     <div className="video-modal" role="presentation" onMouseDown={(event) => {
       if (event.target === event.currentTarget) onClose()
@@ -60,7 +73,16 @@ export function VideoModal({ isOpen, onClose, title, videoUrl }: VideoModalProps
           </button>
         </div>
         <div className="video-modal__player">
-          <video src={videoUrl} controls autoPlay aria-label={title} />
+          {youtubeEmbedUrl ? (
+            <iframe
+              src={youtubeEmbedUrl}
+              title={title}
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          ) : (
+            <video src={videoUrl} controls autoPlay aria-label={title} />
+          )}
         </div>
       </div>
     </div>
