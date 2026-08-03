@@ -1,7 +1,6 @@
 import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
 import heroBackground from '../assets/backgrounds/hero-background.webp'
-import orchestrationThumbnail from '../assets/expertise/automation.webp'
 
 const architectureVideoId = 'FwOTs4UxQS4'
 const architectureThumbnail =
@@ -11,6 +10,9 @@ const systemDemoThumbnail =
   'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail3.jpg'
 const systemDemoVideoUrl =
   'https://www.youtube.com/watch?v=d0wUM8hIaxE&pp=ygUQQUkgQWdlbnQgdHJhaWxlcg%3D%3D&sttick=1'
+const orchestrationThumbnail =
+  'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail1.jpg'
+const orchestrationVideoUrl = 'https://www.youtube.com/watch?v=3ERbYtUwHE8'
 
 export const portfolioData = {
   owner: 'Srujan',
@@ -98,7 +100,7 @@ export const portfolioData = {
         subtitle: '',
         thumbnail: orchestrationThumbnail,
         duration: '0:46',
-        videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
+        videoUrl: orchestrationVideoUrl,
         size: 'small',
       },
     ],
