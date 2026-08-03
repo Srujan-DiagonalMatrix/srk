@@ -646,6 +646,69 @@ p {
 .skill-in-action__play svg { width: 1.1rem; margin-left: 0.15rem; }
 .skill-in-action p { margin: 0.7rem 0 0; color: #344250; font-size: 0.7rem; line-height: 1.55; }
 
+.contact-callout {
+  padding: clamp(1.75rem, 3.5vw, 2.75rem) var(--space-page);
+  border-bottom: var(--border-subtle);
+  background: linear-gradient(90deg, #fffdf8 0%, #fffaf0 50%, #fffdf8 100%);
+}
+
+.contact-callout__inner {
+  width: min(100%, var(--content-max-width));
+  margin-inline: auto;
+  text-align: center;
+}
+
+.contact-callout h2 {
+  margin: 0;
+  color: var(--color-navy);
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.contact-callout p {
+  max-width: none;
+  margin: 0.35rem 0 0;
+  color: #4f5b67;
+  font-size: 0.78rem;
+}
+
+.contact-callout__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.15rem;
+  overflow-x: auto;
+  padding: 0.15rem 0.15rem 0.35rem;
+  scrollbar-width: thin;
+}
+
+.contact-callout__action {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.45rem;
+  align-items: center;
+  justify-content: center;
+  min-width: 9.25rem;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.15rem;
+  border: 1px solid #aab4c0;
+  border-radius: 0.35rem;
+  color: var(--color-navy);
+  background: #fff;
+  box-shadow: 0 0.14rem 0.3rem rgb(11 31 51 / 9%);
+  font-size: 0.76rem;
+  font-weight: 750;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.contact-callout__action svg { width: 1rem; height: 1rem; }
+.contact-callout__action:hover { border-color: var(--color-gold); box-shadow: 0 0.45rem 1rem rgb(11 31 51 / 10%); transform: translateY(-2px); }
+.contact-callout__action--primary { border-color: #f0ad1d; background: #f6b323; }
+
 .video-modal { position: fixed; z-index: 100; inset: 0; display: grid; padding: 1.5rem; background: rgb(5 14 23 / 82%); place-items: center; }
 .video-modal__dialog { width: min(58rem, 100%); overflow: hidden; border-radius: 0.75rem; background: #fff; box-shadow: 0 2rem 5rem rgb(0 0 0 / 40%); }
 .video-modal__header { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; }
