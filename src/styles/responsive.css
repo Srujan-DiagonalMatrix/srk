@@ -1,5 +1,8 @@
 @media (max-width: 64rem) {
   :root { --space-page: 2rem; }
+  .hero__inner { grid-template-columns: minmax(0, 1.25fr) minmax(15rem, 0.75fr); gap: 3rem; }
+  .hero__title { font-size: clamp(2.45rem, 5vw, 3.5rem); }
+  .hero__expertise { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 68.749rem) {
@@ -10,7 +13,15 @@
 
 @media (max-width: 37.5rem) {
   :root { --space-page: 1.25rem; }
-  .page-main { padding-block: 4rem; }
+  .hero { padding-block: 3rem; }
+  .hero__inner { grid-template-columns: 1fr; gap: 2.75rem; }
+  .hero__portrait-wrap { grid-row: 2; width: min(82%, 21rem); margin-inline: auto; }
+  .hero__title { font-size: clamp(1.5rem, 6.6vw, 2.45rem); }
+  .hero__description { font-size: 1rem; }
+  .video-card__copy { display: block; }
+  .video-card__copy p { margin-top: 0.25rem; text-align: left; }
+  .hero__actions { align-items: stretch; }
+  .hero__cta--primary, .hero__cta--secondary { flex: 1 1 calc(50% - 0.5rem); }
 }
 
 @media (max-width: 26rem) {
@@ -20,4 +31,6 @@
 
 @media (max-width: 23.4375rem) {
   :root { --space-page: 1rem; }
+  .hero__actions { display: grid; }
+  .hero__cta { width: 100%; }
 }

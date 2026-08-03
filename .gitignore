@@ -1,3 +1,7 @@
 node_modules
 dist
 *.local
+
+# Generated binary placeholders (run `npm run generate:assets`)
+src/assets/portrait/srujan-portrait.webp
+src/assets/thumbnails/hero-introduction.webp
