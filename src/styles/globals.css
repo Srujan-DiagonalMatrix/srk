@@ -217,7 +217,12 @@ p {
   margin-inline: auto;
 }
 
-.hero__title { font-size: clamp(2.65rem, 4vw, 3.35rem); line-height: 1.08; }
+.hero__title {
+  font-size: clamp(1.65rem, 2.3vw, 2rem);
+  font-weight: 750;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+}
 .hero__title span { display: block; white-space: nowrap; }
 .hero__title strong { color: var(--color-gold); font-weight: inherit; }
 .hero__description { max-width: 43rem; margin-top: 1.35rem; color: #42515f; font-size: 1.1rem; line-height: 1.65; }
