@@ -40,6 +40,28 @@ export const portfolioData = {
       height: 1000,
     },
   },
+  heroNavigation: [
+    {
+      title: 'Can Srujan design & build complex AI systems?',
+      description: 'See my real projects and architecture',
+      href: '#portfolio',
+    },
+    {
+      title: 'How does Srujan solve business problems?',
+      description: 'From idea to impact — my approach',
+      href: '#process',
+    },
+    {
+      title: 'What results can Srujan deliver?',
+      description: 'Outcomes, metrics and business value',
+      href: '#results',
+    },
+    {
+      title: 'Why trust Srujan with your AI projects?',
+      description: 'Skills, process and client satisfaction',
+      href: '#about',
+    },
+  ],
   header: {
     brand: {
       name: 'Srujan',
