@@ -15,7 +15,7 @@
   :root { --space-page: 1.25rem; }
   .hero { padding-block: 3rem; }
   .hero__inner { grid-template-columns: 1fr; gap: 2.75rem; }
-  .hero__portrait-wrap { grid-row: 2; width: min(82%, 21rem); margin-inline: auto; }
+  .hero__portrait-wrap { grid-row: 2; width: min(82%, 21rem); margin: 0 auto; justify-self: center; }
   .hero__title { font-size: clamp(1.5rem, 6.6vw, 2.45rem); }
   .hero__description { font-size: 1rem; }
   .video-card__copy { display: block; }

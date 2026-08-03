@@ -1,6 +1,6 @@
 # Hero reference implementation notes
 
-The reference is represented in the implementation with a roughly **66/34 content-to-portrait desktop split**. The heading is deliberately locked to three lines: “Srujan | Lead Multi-Agent”, “AI Developer &”, and “Solution Designer”. The desktop video uses a 16:9 frame (960 × 540 source), while the portrait uses a 4:5 frame (800 × 1000) with a high-center crop.
+The reference is represented in the implementation with a roughly **66/34 content-to-portrait desktop split**. Both columns align at the top so the portrait begins on the same visual line as the heading, and the portrait is pinned to the right edge of its column. The heading is deliberately locked to three lines: “Srujan | Lead Multi-Agent”, “AI Developer &”, and “Solution Designer”. The desktop video uses a 16:9 frame (960 × 540 source), while the portrait uses a 4:5 frame (800 × 1000) with a high-center crop.
 
 Expertise items use an approximately 13 px row gap and 28 px column gap. CTAs are 48 px tall, separated by a 12 px gap. At tablet sizes the portrait column narrows; at mobile sizes the layout becomes a single logical reading sequence: content, then portrait.
 
