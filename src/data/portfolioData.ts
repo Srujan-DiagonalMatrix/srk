@@ -26,7 +26,7 @@ export const portfolioData = {
       'Observability, Performance & Cost Optimization',
     ],
     actions: [
-      { label: 'Book a Free Call', href: '#contact', variant: 'primary' },
+      { label: 'Book Interview', href: '#contact', variant: 'primary' },
       { label: 'View My Work', href: '#portfolio', variant: 'secondary' },
       { label: 'Download CV', href: '/srujan-cv.pdf', variant: 'text', download: true },
     ],
@@ -60,7 +60,7 @@ export const portfolioData = {
       { label: 'About Me', href: '#about', isActive: false },
     ],
     cta: {
-      label: 'Let’s Automate',
+      label: 'Book Interview',
       href: '#contact',
     },
   },
