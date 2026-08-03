@@ -588,6 +588,64 @@ p {
 .case-study__link { display: inline-flex; gap: 0.35rem; align-items: center; align-self: flex-start; margin-top: auto; padding: 0.75rem 0 0; border: 0; color: #d79712; background: none; font-size: 0.66rem; font-weight: 750; cursor: pointer; }
 .case-study__link svg { width: 0.85rem; }
 
+.leadership-customer-skills {
+  padding-block: clamp(2rem, 3.5vw, 3rem);
+  border-bottom: var(--border-subtle);
+  background: #f8f9fa;
+}
+
+.leadership-customer-skills h2 {
+  margin: 0 0 1.35rem;
+  color: var(--color-navy);
+  font-size: clamp(1.05rem, 1.55vw, 1.3rem);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.leadership-customer-skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.skill-in-action {
+  min-width: 0;
+}
+
+.skill-in-action h3 {
+  margin: 0 0 0.65rem;
+  color: var(--color-navy);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.skill-in-action__video {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.45rem;
+  background: #0b1927;
+  box-shadow: 0 0.2rem 0.65rem rgb(11 31 51 / 12%);
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
+}
+
+.skill-in-action__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.skill-in-action__video:hover img { transform: scale(1.025); }
+.skill-in-action__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgb(4 13 23 / 4%), rgb(4 13 23 / 30%)); }
+.skill-in-action__play { position: absolute; top: 50%; left: 50%; display: grid; width: 3rem; height: 3rem; border: 2px solid #fff; border-radius: 50%; color: #fff; background: rgb(5 14 23 / 66%); transform: translate(-50%, -50%); place-items: center; }
+.skill-in-action__play svg { width: 1.1rem; margin-left: 0.15rem; }
+.skill-in-action p { margin: 0.7rem 0 0; color: #344250; font-size: 0.7rem; line-height: 1.55; }
+
 .video-modal { position: fixed; z-index: 100; inset: 0; display: grid; padding: 1.5rem; background: rgb(5 14 23 / 82%); place-items: center; }
 .video-modal__dialog { width: min(58rem, 100%); overflow: hidden; border-radius: 0.75rem; background: #fff; box-shadow: 0 2rem 5rem rgb(0 0 0 / 40%); }
 .video-modal__header { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; }
