@@ -12,6 +12,7 @@ import {
 import { portfolioData } from '../data/portfolioData'
 import { CapabilityPillars } from './CapabilityPillars'
 import { CoreSkills } from './CoreSkills'
+import { FeaturedCaseStudies } from './FeaturedCaseStudies'
 import { VideoCard } from './VideoCard'
 
 const proofIcons = {
@@ -97,6 +98,7 @@ export function PortfolioShowcase() {
       <ShowcaseSection data={portfolioData.trustShowcase} id="about" number="04" />
       <CapabilityPillars />
       <CoreSkills />
+      <FeaturedCaseStudies />
     </>
   )
 }
