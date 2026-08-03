@@ -4,6 +4,8 @@ The reference is represented in the implementation with a roughly **66/34 conten
 
 Expertise items use an approximately 13 px row gap and 28 px column gap. CTAs are 48 px tall, separated by a 12 px gap. At tablet sizes the portrait column narrows; at mobile sizes the layout becomes a single logical reading sequence: content, then portrait.
 
+The hero copy follows the supplied design verbatim. The video card does not render invented visible title or subtitle text; its supporting sentence appears once immediately below the card, while the control retains an accessible fallback name.
+
 ## Asset status
 
 The supplied production portrait is used for `srujan-portrait.webp`. It is center-cropped from the supplied 1173 × 1341 image to the required 4:5 composition and exported as a high-quality 800 × 1000 WebP. `hero-introduction.webp` remains a dimensionally accurate local placeholder because no production video thumbnail or playable video was supplied. The video card therefore announces “Video coming soon” and does not open an empty player. The CV link is configured for the intended `/srujan-cv.pdf` destination; that production document is not currently present.

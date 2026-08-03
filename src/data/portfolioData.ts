@@ -7,9 +7,9 @@ export const portfolioData = {
   hero: {
     title: ['Srujan | Lead Multi-Agent', 'AI Developer &', 'Solution Designer'],
     description:
-      'I design and build intelligent multi-agent systems that turn complex business challenges into reliable, scalable automation.',
+      'I build intelligent multi-agent systems that automate complex workflows, reduce costs, and deliver measurable results.',
     supportingText:
-      'From strategy and architecture to production-ready implementation, I create AI solutions built around real outcomes.',
+      'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
     expertise: [
       'Multi-Agent AI Architecture',
       'End-to-End Automation',
@@ -22,8 +22,8 @@ export const portfolioData = {
       { label: 'Download CV', href: '/srujan-cv.pdf', variant: 'text', download: true },
     ],
     video: {
-      title: 'Meet Srujan',
-      subtitle: 'A quick introduction to how I approach AI systems',
+      title: '',
+      subtitle: '',
       thumbnail: heroThumbnail,
       duration: '1:28',
       videoUrl: null,

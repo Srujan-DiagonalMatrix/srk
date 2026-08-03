@@ -15,6 +15,7 @@ export type VideoCardProps = {
 export function VideoCard({ title, subtitle, thumbnail, duration, videoUrl, size, className = '' }: VideoCardProps) {
   const [isOpen, setIsOpen] = useState(false)
   const unavailable = !videoUrl
+  const accessibleTitle = title || 'Introduction video'
 
   return (
     <>
@@ -23,7 +24,7 @@ export function VideoCard({ title, subtitle, thumbnail, duration, videoUrl, size
           className="video-card__trigger"
           type="button"
           onClick={() => videoUrl && setIsOpen(true)}
-          aria-label={unavailable ? `${title} video unavailable` : `Play ${title}`}
+          aria-label={unavailable ? `${accessibleTitle} unavailable` : `Play ${accessibleTitle}`}
           aria-disabled={unavailable}
         >
           <img className="video-card__thumbnail" src={thumbnail} alt="" width="960" height="540" />
@@ -32,12 +33,14 @@ export function VideoCard({ title, subtitle, thumbnail, duration, videoUrl, size
           <span className="video-card__duration">{duration}</span>
           {unavailable && <span className="video-card__status">Video coming soon</span>}
         </button>
-        <div className="video-card__copy">
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </div>
+        {(title || subtitle) && (
+          <div className="video-card__copy">
+            {title && <h2>{title}</h2>}
+            {subtitle && <p>{subtitle}</p>}
+          </div>
+        )}
       </article>
-      {videoUrl && <VideoModal isOpen={isOpen} onClose={() => setIsOpen(false)} title={title} videoUrl={videoUrl} />}
+      {videoUrl && <VideoModal isOpen={isOpen} onClose={() => setIsOpen(false)} title={accessibleTitle} videoUrl={videoUrl} />}
     </>
   )
 }
