@@ -8,25 +8,20 @@ export const portfolioData = {
   hero: {
     background: heroBackground,
     eyebrow: ['SRUJAN | LEAD MULTI-AGENT AI', 'DEVELOPER & SOLUTION DESIGNER'],
-    headline: [
-      [{ text: 'Build ' }, { text: 'intelligent AI', accent: true }, { text: ' systems.' }],
-      [{ text: 'Automate ', accent: true }, { text: 'complex ' }, { text: 'workflows.', accent: true }],
-      [{ text: 'Deliver ', accent: true }, { text: 'measurable ' }, { text: 'results.', accent: true }],
-    ],
     description:
       'I design and deliver multi-agent AI solutions that streamline operations, reduce manual effort, and create measurable business impact.',
     supportingText:
       'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
     expertise: [
-      'Agentic AI Architecture & Orchestration',
-      'Tool Calling, MCP & Enterprise Integration',
-      'RAG, Context Engineering & Agent Memory',
-      'AI Evaluation, Guardrails & Reliability',
-      'Production AI Engineering & Cloud Deployment',
-      'Observability, Performance & Cost Optimization',
+      { highlight: 'Agentic AI', detail: 'Architecture & Orchestration', icon: 'architecture' },
+      { highlight: 'Tool Calling,', detail: 'MCP & Enterprise Integration', icon: 'tools' },
+      { highlight: 'RAG,', detail: 'Context Engineering & Agent Memory', icon: 'memory' },
+      { highlight: 'Production AI Engineering &', detail: 'Cloud Deployment', icon: 'cloud' },
+      { highlight: 'AI Evaluation,', detail: 'Guardrails & Reliability', icon: 'reliability' },
+      { highlight: 'Observability,', detail: 'Performance & Cost Optimization', icon: 'observability' },
     ],
     actions: [
-      { label: 'Book a Free Call', href: '#contact', variant: 'primary' },
+      { label: 'Book Interview', href: '#contact', variant: 'primary' },
       { label: 'View My Work', href: '#portfolio', variant: 'secondary' },
       { label: 'Download CV', href: '/srujan-cv.pdf', variant: 'text', download: true },
     ],
@@ -60,7 +55,7 @@ export const portfolioData = {
       { label: 'About Me', href: '#about', isActive: false },
     ],
     cta: {
-      label: 'Let’s Automate',
+      label: 'Book Interview',
       href: '#contact',
     },
   },

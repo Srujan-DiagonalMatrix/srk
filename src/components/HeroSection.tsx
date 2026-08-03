@@ -1,36 +1,42 @@
-import { ArrowRight, Check, Download, FileText } from 'lucide-react'
+import { ArrowRight, BrainCircuit, ChartNoAxesCombined, CloudUpload, Download, FileText, Network, ShieldCheck, Wrench } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
 export function HeroSection() {
-  const { actions, background, expertise, eyebrow, headline, supportingText, video } = portfolioData.hero
+  const { actions, background, expertise, eyebrow, supportingText, video } = portfolioData.hero
+  const expertiseIcons = {
+    architecture: Network,
+    tools: Wrench,
+    memory: BrainCircuit,
+    cloud: CloudUpload,
+    reliability: ShieldCheck,
+    observability: ChartNoAxesCombined,
+  }
 
   return (
     <section className="hero" id="home" aria-labelledby="hero-title" style={{ backgroundImage: `url(${background})` }}>
       <div className="hero__inner">
         <div className="hero__copy">
-          <p className="hero__eyebrow">
+          <h1 id="hero-title" className="hero__eyebrow">
             <span><strong>SRUJAN |</strong>{eyebrow[0].replace('SRUJAN |', '')}</span>
             <span>{eyebrow[1]}</span>
-          </p>
-          <h1 id="hero-title" className="hero__title">
-            {headline.map((line, lineIndex) => (
-              <span key={lineIndex}>
-                {line.map((segment) => 'accent' in segment && segment.accent
-                  ? <strong key={segment.text}>{segment.text}</strong>
-                  : segment.text)}
-              </span>
-            ))}
           </h1>
         </div>
         <div className="hero__details">
           <ul className="hero__expertise" aria-label="Areas of expertise">
-            {expertise.map((item) => (
-              <li key={item}>
-                <Check aria-hidden="true" />
-                <span>{item}</span>
-              </li>
-            ))}
+            {expertise.map((item) => {
+              const Icon = expertiseIcons[item.icon]
+
+              return (
+                <li key={item.highlight}>
+                  <span className="hero__expertise-icon"><Icon aria-hidden="true" /></span>
+                  <span className="hero__expertise-copy">
+                    <strong>{item.highlight}</strong>
+                    <span>{item.detail}</span>
+                  </span>
+                </li>
+              )
+            })}
           </ul>
           <div className="hero__actions">
             {actions.map((action) => (
