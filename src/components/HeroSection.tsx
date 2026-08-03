@@ -3,20 +3,24 @@ import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
 export function HeroSection() {
-  const { actions, description, expertise, portrait, supportingText, title, video } = portfolioData.hero
+  const { actions, background, description, expertise, supportingText, title, video } = portfolioData.hero
 
   return (
-    <section className="hero" id="home" aria-labelledby="hero-title">
+    <section className="hero" id="home" aria-labelledby="hero-title" style={{ backgroundImage: `url(${background})` }}>
       <div className="hero__inner">
-        <div className="hero__content">
+        <div className="hero__copy">
           <h1 id="hero-title" className="hero__title">
             <span><strong>Srujan |</strong> {title[0].replace('Srujan | ', '')}</span>
             <span>{title[1]}</span>
             <span>{title[2]}</span>
           </h1>
           <p className="hero__description">{description}</p>
+        </div>
+        <div className="hero__media">
           <VideoCard {...video} />
           <p className="hero__supporting">{supportingText}</p>
+        </div>
+        <div className="hero__details">
           <ul className="hero__expertise" aria-label="Areas of expertise">
             {expertise.map((item) => (
               <li key={item.label}>
@@ -35,9 +39,6 @@ export function HeroSection() {
               </a>
             ))}
           </div>
-        </div>
-        <div className="hero__portrait-wrap">
-          <img className="hero__portrait" src={portrait.src} alt={portrait.alt} width={portrait.width} height={portrait.height} loading="eager" fetchPriority="high" />
         </div>
       </div>
     </section>

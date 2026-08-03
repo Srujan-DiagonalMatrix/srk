@@ -1,5 +1,6 @@
 import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
+import heroBackground from '../assets/backgrounds/hero-background.webp'
 import automationIcon from '../assets/expertise/automation.webp'
 import multiAgentIcon from '../assets/expertise/multi-agent.webp'
 import scalabilityIcon from '../assets/expertise/scalability.webp'
@@ -9,6 +10,7 @@ export const portfolioData = {
   owner: 'Srujan',
   introduction: 'A thoughtful foundation for a personal portfolio.',
   hero: {
+    background: heroBackground,
     title: ['Srujan | Lead Multi-Agent', 'AI Developer &', 'Solution Designer'],
     description:
       'I build intelligent multi-agent systems that automate complex workflows, reduce costs, and deliver measurable results.',
