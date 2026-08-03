@@ -151,6 +151,46 @@ export const portfolioData = {
       { label: 'Iterate, test & continuously improve', icon: 'iterate' },
     ],
   },
+  resultsShowcase: {
+    title: 'What results can Srujan deliver?',
+    description:
+      'I start by understanding your real problem, then design AI solutions that remove manual work, reduce errors, and improve speed.',
+    detail:
+      'My process is collaborative, transparent, and focused on measurable impact.',
+    proofTitle: 'How I Solve Problems',
+    videos: [
+      {
+        title: 'Business Problem Discovery',
+        subtitle: '',
+        thumbnail: architectureThumbnail,
+        duration: '1:49',
+        videoUrl: architectureVideoUrl,
+        size: 'large',
+      },
+      {
+        title: 'Problem Discovery Call',
+        subtitle: '',
+        thumbnail: systemDemoThumbnail,
+        duration: '0:58',
+        videoUrl: systemDemoVideoUrl,
+        size: 'small',
+      },
+      {
+        title: 'Solution Design Walkthrough',
+        subtitle: '',
+        thumbnail: orchestrationThumbnail,
+        duration: '0:46',
+        videoUrl: orchestrationVideoUrl,
+        size: 'small',
+      },
+    ],
+    proofPoints: [
+      { label: 'Deep dive into your business workflows', icon: 'discovery' },
+      { label: 'Identify automation & AI opportunities', icon: 'opportunities' },
+      { label: 'Design tailored multi-agent solutions', icon: 'solutions' },
+      { label: 'Iterate, test & continuously improve', icon: 'iterate' },
+    ],
+  },
   header: {
     brand: {
       name: 'Srujan',
