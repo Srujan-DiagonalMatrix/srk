@@ -1,6 +1,6 @@
 @media (max-width: 64rem) {
   :root { --space-page: 2rem; }
-  .hero__inner { grid-template-columns: minmax(0, 1.25fr) minmax(15rem, 0.75fr); gap: 3rem; }
+  .hero__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
   .hero__expertise { grid-template-columns: 1fr; }
 }
 
@@ -14,14 +14,14 @@
   :root { --space-page: 1.25rem; }
   .hero { padding-block: 3rem; }
   .hero__inner { grid-template-columns: 1fr; gap: 2.75rem; }
-  .hero__portrait-wrap { grid-row: 2; width: min(82%, 21rem); margin: 0 auto; justify-self: center; }
+  .hero__portrait-wrap { grid-row: 2; width: min(82%, 21rem); min-height: auto; margin: 0 auto; justify-self: center; }
+  .hero__portrait { height: auto; min-height: auto; aspect-ratio: 4 / 5; }
   .hero__title { font-size: clamp(1.45rem, 6.1vw, 1.8rem); }
   .hero__description { font-size: 1rem; }
   .video-card__copy { display: block; }
   .video-card__copy p { margin-top: 0.25rem; text-align: left; }
-  .hero__actions { align-items: stretch; }
-  .hero__cta--primary, .hero__cta--secondary { flex: 1 1 calc(50% - 0.5rem); min-width: 0; }
-  .hero__cta--text { flex: 1 1 100%; }
+  .hero__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+  .hero__cta--text { grid-column: 1 / -1; }
 }
 
 @media (max-width: 26rem) {
@@ -31,6 +31,7 @@
 
 @media (max-width: 23.4375rem) {
   :root { --space-page: 1rem; }
-  .hero__actions { display: grid; }
+  .hero__actions { grid-template-columns: 1fr; }
+  .hero__cta--text { grid-column: auto; }
   .hero__cta { width: 100%; }
 }
