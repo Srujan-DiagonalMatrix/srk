@@ -204,13 +204,13 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1672 / 941;
+  aspect-ratio: 1672 / 480;
   padding-block: clamp(2.25rem, 4vw, 3.5rem);
   color: #fff;
   background-color: #061426;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 .hero__inner {
