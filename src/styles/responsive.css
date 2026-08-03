@@ -5,6 +5,8 @@
   .portfolio-showcase__layout { grid-template-columns: minmax(0, 1.45fr) minmax(13rem, 1fr); }
   .portfolio-showcase__proof { grid-column: 1 / -1; }
   .portfolio-showcase__proof ul { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .capability-pillars__row { display: flex; overflow-x: auto; padding-bottom: 0.5rem; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .capability-pillar { flex: 0 0 min(16rem, calc(100vw - 5rem)); scroll-snap-align: start; }
 }
 
 @media (max-width: 48rem) {
