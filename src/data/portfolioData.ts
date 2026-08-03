@@ -18,12 +18,12 @@ export const portfolioData = {
     supportingText:
       'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
     expertise: [
-      'Multi-Agent AI Architecture',
-      'End-to-End Automation',
-      'System Design & Integration',
-      'Scalable AI Workflows',
-      'Problem Solving & Optimization',
-      'Real Business Impact',
+      'Agentic AI Architecture & Orchestration',
+      'Tool Calling, MCP & Enterprise Integration',
+      'RAG, Context Engineering & Agent Memory',
+      'AI Evaluation, Guardrails & Reliability',
+      'Production AI Engineering & Cloud Deployment',
+      'Observability, Performance & Cost Optimization',
     ],
     actions: [
       { label: 'Book a Free Call', href: '#contact', variant: 'primary' },
