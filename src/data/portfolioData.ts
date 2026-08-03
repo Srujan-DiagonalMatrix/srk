@@ -2,12 +2,15 @@ import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
 import heroBackground from '../assets/backgrounds/hero-background.webp'
 import orchestrationThumbnail from '../assets/expertise/automation.webp'
-import systemsThumbnail from '../assets/expertise/system-design.webp'
 
 const architectureVideoId = 'FwOTs4UxQS4'
 const architectureThumbnail =
   'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail2.jpg'
 const architectureVideoUrl = `https://www.youtube.com/watch?v=${architectureVideoId}`
+const systemDemoThumbnail =
+  'https://raw.githubusercontent.com/Srujan-DiagonalMatrix/srk/codex/create-horizontal-layout-for-video-thumbnails/src/assets/thumbnails/Thumbnail3.jpg'
+const systemDemoVideoUrl =
+  'https://www.youtube.com/watch?v=d0wUM8hIaxE&pp=ygUQQUkgQWdlbnQgdHJhaWxlcg%3D%3D&sttick=1'
 
 export const portfolioData = {
   owner: 'Srujan',
@@ -85,9 +88,9 @@ export const portfolioData = {
       {
         title: 'Multi-Agent System Demo',
         subtitle: '',
-        thumbnail: systemsThumbnail,
+        thumbnail: systemDemoThumbnail,
         duration: '0:58',
-        videoUrl: 'https://www.youtube.com/watch?v=3ERbYtUwHE8',
+        videoUrl: systemDemoVideoUrl,
         size: 'small',
       },
       {
