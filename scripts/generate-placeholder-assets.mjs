@@ -13,7 +13,7 @@ const assets = [
     encodedSource: 'scripts/assets/hero-introduction.webp.base64',
     output: 'src/assets/thumbnails/hero-introduction.webp',
   },
-  ...[2, 3, 4, 5].map((number) => ({
+  ...[1, 2, 3, 4, 5].map((number) => ({
     encodedSource: 'scripts/assets/hero-introduction.webp.base64',
     output: `src/assets/Thumbnail${number}.jpg`,
   })),

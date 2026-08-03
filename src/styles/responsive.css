@@ -10,6 +10,7 @@
   .core-skills__scroller { overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: thin; }
   .core-skills__grid { grid-template-columns: repeat(5, 12rem); width: max-content; }
   .featured-case-studies__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .leadership-customer-skills__grid { gap: 1rem; }
 }
 
 @media (max-width: 48rem) {
@@ -45,6 +46,7 @@
   .hero-navigation__card { flex: 0 0 min(18rem, calc(100vw - 3.5rem)); scroll-snap-align: start; }
   .portfolio-showcase__videos, .portfolio-showcase__proof ul { grid-template-columns: 1fr; }
   .featured-case-studies__grid { grid-template-columns: 1fr; }
+  .leadership-customer-skills__grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
 
 @media (max-width: 26rem) {

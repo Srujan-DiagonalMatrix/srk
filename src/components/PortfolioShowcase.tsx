@@ -13,6 +13,7 @@ import { portfolioData } from '../data/portfolioData'
 import { CapabilityPillars } from './CapabilityPillars'
 import { CoreSkills } from './CoreSkills'
 import { FeaturedCaseStudies } from './FeaturedCaseStudies'
+import { LeadershipCustomerSkills } from './LeadershipCustomerSkills'
 import { VideoCard } from './VideoCard'
 
 const proofIcons = {
@@ -99,6 +100,7 @@ export function PortfolioShowcase() {
       <CapabilityPillars />
       <CoreSkills />
       <FeaturedCaseStudies />
+      <LeadershipCustomerSkills />
     </>
   )
 }
