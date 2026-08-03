@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "generate:assets": "node scripts/generate-placeholder-assets.mjs",
+    "predev": "npm run generate:assets",
     "dev": "vite",
+    "prebuild": "npm run generate:assets",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
