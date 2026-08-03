@@ -245,13 +245,14 @@ p {
 .hero__expertise { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem 1.75rem; margin: 1.3rem 0 0; padding: 0; list-style: none; }
 .hero__expertise li { display: flex; gap: 0.6rem; align-items: center; color: #263746; font-size: 0.9rem; font-weight: 650; }
 .hero__expertise svg { flex: 0 0 auto; width: 1.15rem; height: 1.15rem; padding: 0.15rem; border-radius: 50%; color: #fff; background: var(--color-gold); stroke-width: 3; }
-.hero__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-top: 1.8rem; }
-.hero__cta { display: inline-flex; gap: 0.55rem; align-items: center; justify-content: center; min-height: 3rem; padding: 0.75rem 1.2rem; border: 1px solid transparent; border-radius: 0.4rem; font-size: 0.9rem; font-weight: 750; text-decoration: none; transition: transform 160ms ease, background-color 160ms ease; }
-.hero__cta svg { width: 1rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 0.875rem; align-items: center; margin-top: 1.8rem; }
+.hero__cta { display: inline-flex; gap: 0.55rem; align-items: center; justify-content: center; min-height: 3rem; padding: 0.75rem 1.2rem; border: 1px solid #aab4c0; border-radius: 0.35rem; color: var(--color-navy); background: #fff; box-shadow: 0 0.16rem 0.28rem rgb(11 31 51 / 12%); font-size: 0.875rem; font-weight: 750; text-decoration: none; white-space: nowrap; transition: transform 160ms ease, background-color 160ms ease; }
+.hero__cta svg { width: 1.05rem; height: 1.05rem; }
 .hero__cta:hover { transform: translateY(-2px); }
-.hero__cta--primary { color: #10202e; background: var(--color-gold); }
-.hero__cta--secondary { border-color: var(--color-navy); color: var(--color-navy); }
-.hero__cta--text { padding-inline: 0.65rem; color: #3e4c58; }
+.hero__cta--primary { min-width: 11.5rem; border-color: var(--color-gold); color: #10202e; background: var(--color-gold); }
+.hero__cta--secondary { min-width: 10.375rem; }
+.hero__cta--text { min-width: 12rem; }
+.hero__cta--text svg:last-child { margin-left: 0.15rem; }
 .hero__portrait-wrap { width: 100%; max-width: 24rem; margin-top: 0.25rem; padding: 1rem; border: 1px solid rgb(200 155 60 / 45%); border-radius: 1rem; justify-self: end; }
 .hero__portrait { position: relative; z-index: 1; width: 100%; max-height: 44rem; border-radius: 1rem; box-shadow: 0 1.5rem 3rem rgb(11 31 51 / 17%); filter: saturate(0.88) sepia(0.08); object-fit: cover; object-position: center 28%; aspect-ratio: 4 / 5; }
 

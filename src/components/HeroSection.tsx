@@ -1,4 +1,4 @@
-import { ArrowDownToLine, ArrowRight, Check } from 'lucide-react'
+import { ArrowRight, Check, Download, FileText } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
@@ -23,9 +23,10 @@ export function HeroSection() {
           <div className="hero__actions">
             {actions.map((action) => (
               <a className={`hero__cta hero__cta--${action.variant}`} href={action.href} download={'download' in action ? action.download : undefined} key={action.label}>
+                {action.variant === 'text' && <FileText aria-hidden="true" />}
                 {action.label}
                 {action.variant === 'primary' && <ArrowRight aria-hidden="true" />}
-                {action.variant === 'text' && <ArrowDownToLine aria-hidden="true" />}
+                {action.variant === 'text' && <Download aria-hidden="true" />}
               </a>
             ))}
           </div>

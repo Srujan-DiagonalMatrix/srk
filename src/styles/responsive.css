@@ -20,7 +20,8 @@
   .video-card__copy { display: block; }
   .video-card__copy p { margin-top: 0.25rem; text-align: left; }
   .hero__actions { align-items: stretch; }
-  .hero__cta--primary, .hero__cta--secondary { flex: 1 1 calc(50% - 0.5rem); }
+  .hero__cta--primary, .hero__cta--secondary { flex: 1 1 calc(50% - 0.5rem); min-width: 0; }
+  .hero__cta--text { flex: 1 1 100%; }
 }
 
 @media (max-width: 26rem) {
