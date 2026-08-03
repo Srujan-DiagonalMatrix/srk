@@ -1,0 +1,12 @@
+@media (max-width: 64rem) {
+  :root { --space-page: 2rem; }
+}
+
+@media (max-width: 37.5rem) {
+  :root { --space-page: 1.25rem; }
+  .page-main { padding-block: 4rem; }
+}
+
+@media (max-width: 23.4375rem) {
+  :root { --space-page: 1rem; }
+}
