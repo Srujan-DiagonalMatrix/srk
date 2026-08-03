@@ -7,6 +7,7 @@
   .hero__inner { grid-template-columns: 1fr; grid-template-rows: auto; gap: 1.75rem; }
   .hero__copy, .hero__media, .hero__details { grid-row: auto; grid-column: 1; }
   .hero__media { width: min(100%, 34rem); }
+  .hero__title span { white-space: normal; }
   .hero__expertise { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero__expertise li { font-size: 0.72rem; }
   .hero__expertise img { width: 2.5rem; height: 2.5rem; }
@@ -23,6 +24,8 @@
   .hero { padding-block: 3rem; }
   .hero__title { font-size: clamp(1.45rem, 6.1vw, 1.8rem); }
   .hero__description { font-size: 0.85rem; }
+  .hero__media { grid-template-columns: 1fr; }
+  .hero__supporting { padding: 0.85rem 0 0; border-top: 2px solid #ffab00; border-left: 0; }
   .video-card__copy { display: block; }
   .video-card__copy p { margin-top: 0.25rem; text-align: left; }
   .hero__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }

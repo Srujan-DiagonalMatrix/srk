@@ -1,31 +1,32 @@
-import { ArrowRight, Download, FileText } from 'lucide-react'
+import { ArrowRight, Check, Download, FileText } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
 export function HeroSection() {
-  const { actions, background, description, expertise, supportingText, title, video } = portfolioData.hero
+  const { actions, background, description, expertise, eyebrow, headline, supportingText, video } = portfolioData.hero
 
   return (
     <section className="hero" id="home" aria-labelledby="hero-title" style={{ backgroundImage: `url(${background})` }}>
       <div className="hero__inner">
         <div className="hero__copy">
+          <p className="hero__eyebrow"><strong>SRUJAN |</strong>{eyebrow.replace('SRUJAN |', '')}</p>
           <h1 id="hero-title" className="hero__title">
-            <span><strong>Srujan |</strong> {title[0].replace('Srujan | ', '')}</span>
-            <span>{title[1]}</span>
-            <span>{title[2]}</span>
+            {headline.map((line, lineIndex) => (
+              <span key={lineIndex}>
+                {line.map((segment) => 'accent' in segment && segment.accent
+                  ? <strong key={segment.text}>{segment.text}</strong>
+                  : segment.text)}
+              </span>
+            ))}
           </h1>
           <p className="hero__description">{description}</p>
-        </div>
-        <div className="hero__media">
-          <VideoCard {...video} />
-          <p className="hero__supporting">{supportingText}</p>
         </div>
         <div className="hero__details">
           <ul className="hero__expertise" aria-label="Areas of expertise">
             {expertise.map((item) => (
-              <li key={item.label}>
-                <img src={item.icon} alt="" width="256" height="256" />
-                <span>{item.label}</span>
+              <li key={item}>
+                <Check aria-hidden="true" />
+                <span>{item}</span>
               </li>
             ))}
           </ul>
@@ -39,6 +40,10 @@ export function HeroSection() {
               </a>
             ))}
           </div>
+        </div>
+        <div className="hero__media">
+          <VideoCard {...video} />
+          <p className="hero__supporting">{supportingText}</p>
         </div>
       </div>
     </section>

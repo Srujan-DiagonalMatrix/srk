@@ -1,26 +1,29 @@
 import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
 import heroBackground from '../assets/backgrounds/hero-background.webp'
-import automationIcon from '../assets/expertise/automation.webp'
-import multiAgentIcon from '../assets/expertise/multi-agent.webp'
-import scalabilityIcon from '../assets/expertise/scalability.webp'
-import systemDesignIcon from '../assets/expertise/system-design.webp'
 
 export const portfolioData = {
   owner: 'Srujan',
   introduction: 'A thoughtful foundation for a personal portfolio.',
   hero: {
     background: heroBackground,
-    title: ['Srujan | Lead Multi-Agent', 'AI Developer &', 'Solution Designer'],
+    eyebrow: 'SRUJAN | LEAD MULTI-AGENT AI DEVELOPER & SOLUTION DESIGNER',
+    headline: [
+      [{ text: 'BUILD ' }, { text: 'INTELLIGENT AI SYSTEMS.', accent: true }],
+      [{ text: 'AUTOMATE ', accent: true }, { text: 'COMPLEX ' }, { text: 'WORKFLOWS.', accent: true }],
+      [{ text: 'DELIVER ', accent: true }, { text: 'MEASURABLE ' }, { text: 'RESULTS.', accent: true }],
+    ],
     description:
-      'I build intelligent multi-agent systems that automate complex workflows, reduce costs, and deliver measurable results.',
+      'I design and deliver multi-agent AI solutions that streamline operations, reduce manual effort, and create measurable business impact.',
     supportingText:
       'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
     expertise: [
-      { label: 'Multi-Agent AI Architecture', icon: multiAgentIcon },
-      { label: 'End-to-End Automation', icon: automationIcon },
-      { label: 'System Design & Integration', icon: systemDesignIcon },
-      { label: 'Problem Solving & Scalability', icon: scalabilityIcon },
+      'Multi-Agent AI Architecture',
+      'End-to-End Automation',
+      'System Design & Integration',
+      'Scalable AI Workflows',
+      'Problem Solving & Optimization',
+      'Real Business Impact',
     ],
     actions: [
       { label: 'Book a Free Call', href: '#contact', variant: 'primary' },
