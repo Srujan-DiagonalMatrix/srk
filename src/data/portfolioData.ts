@@ -7,11 +7,11 @@ export const portfolioData = {
   introduction: 'A thoughtful foundation for a personal portfolio.',
   hero: {
     background: heroBackground,
-    eyebrow: 'SRUJAN | LEAD MULTI-AGENT AI DEVELOPER & SOLUTION DESIGNER',
+    eyebrow: ['SRUJAN | LEAD MULTI-AGENT AI', 'DEVELOPER & SOLUTION DESIGNER'],
     headline: [
-      [{ text: 'BUILD ' }, { text: 'INTELLIGENT AI SYSTEMS.', accent: true }],
-      [{ text: 'AUTOMATE ', accent: true }, { text: 'COMPLEX ' }, { text: 'WORKFLOWS.', accent: true }],
-      [{ text: 'DELIVER ', accent: true }, { text: 'MEASURABLE ' }, { text: 'RESULTS.', accent: true }],
+      [{ text: 'Build ' }, { text: 'intelligent AI', accent: true }, { text: ' systems.' }],
+      [{ text: 'Automate ', accent: true }, { text: 'complex ' }, { text: 'workflows.', accent: true }],
+      [{ text: 'Deliver ', accent: true }, { text: 'measurable ' }, { text: 'results.', accent: true }],
     ],
     description:
       'I design and deliver multi-agent AI solutions that streamline operations, reduce manual effort, and create measurable business impact.',

@@ -3,13 +3,16 @@ import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
 export function HeroSection() {
-  const { actions, background, description, expertise, eyebrow, headline, supportingText, video } = portfolioData.hero
+  const { actions, background, expertise, eyebrow, headline, supportingText, video } = portfolioData.hero
 
   return (
     <section className="hero" id="home" aria-labelledby="hero-title" style={{ backgroundImage: `url(${background})` }}>
       <div className="hero__inner">
         <div className="hero__copy">
-          <p className="hero__eyebrow"><strong>SRUJAN |</strong>{eyebrow.replace('SRUJAN |', '')}</p>
+          <p className="hero__eyebrow">
+            <span><strong>SRUJAN |</strong>{eyebrow[0].replace('SRUJAN |', '')}</span>
+            <span>{eyebrow[1]}</span>
+          </p>
           <h1 id="hero-title" className="hero__title">
             {headline.map((line, lineIndex) => (
               <span key={lineIndex}>
@@ -19,7 +22,6 @@ export function HeroSection() {
               </span>
             ))}
           </h1>
-          <p className="hero__description">{description}</p>
         </div>
         <div className="hero__details">
           <ul className="hero__expertise" aria-label="Areas of expertise">
