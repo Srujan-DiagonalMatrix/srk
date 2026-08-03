@@ -10,6 +10,8 @@ import {
   Workflow,
 } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
+import { CapabilityPillars } from './CapabilityPillars'
+import { CoreSkills } from './CoreSkills'
 import { VideoCard } from './VideoCard'
 
 const proofIcons = {
@@ -93,6 +95,8 @@ export function PortfolioShowcase() {
       <ShowcaseSection data={portfolioData.problemSolvingShowcase} id="process" number="02" />
       <ShowcaseSection data={portfolioData.resultsShowcase} id="results" number="03" />
       <ShowcaseSection data={portfolioData.trustShowcase} id="about" number="04" />
+      <CapabilityPillars />
+      <CoreSkills />
     </>
   )
 }
