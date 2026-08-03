@@ -2,9 +2,20 @@
   :root { --space-page: 2rem; }
 }
 
+@media (max-width: 68.749rem) {
+  .desktop-nav { display: none; }
+  .site-header__actions { margin-left: auto; }
+  .menu-button { display: grid; }
+}
+
 @media (max-width: 37.5rem) {
   :root { --space-page: 1.25rem; }
   .page-main { padding-block: 4rem; }
+}
+
+@media (max-width: 26rem) {
+  .header-cta { display: none; }
+  .mobile-nav__cta { display: inline-flex; }
 }
 
 @media (max-width: 23.4375rem) {
