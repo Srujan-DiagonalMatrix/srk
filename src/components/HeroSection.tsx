@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Download, FileText } from 'lucide-react'
+import { ArrowRight, Download, FileText } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
 import { VideoCard } from './VideoCard'
 
@@ -18,7 +18,12 @@ export function HeroSection() {
           <VideoCard {...video} />
           <p className="hero__supporting">{supportingText}</p>
           <ul className="hero__expertise" aria-label="Areas of expertise">
-            {expertise.map((item) => <li key={item}><Check aria-hidden="true" />{item}</li>)}
+            {expertise.map((item) => (
+              <li key={item.label}>
+                <img src={item.icon} alt="" width="256" height="256" />
+                <span>{item.label}</span>
+              </li>
+            ))}
           </ul>
           <div className="hero__actions">
             {actions.map((action) => (

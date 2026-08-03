@@ -1,5 +1,9 @@
 import portraitImage from '../assets/portrait/srujan-portrait.webp'
 import heroThumbnail from '../assets/thumbnails/hero-introduction.webp'
+import automationIcon from '../assets/expertise/automation.webp'
+import multiAgentIcon from '../assets/expertise/multi-agent.webp'
+import scalabilityIcon from '../assets/expertise/scalability.webp'
+import systemDesignIcon from '../assets/expertise/system-design.webp'
 
 export const portfolioData = {
   owner: 'Srujan',
@@ -11,10 +15,10 @@ export const portfolioData = {
     supportingText:
       'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
     expertise: [
-      'Multi-Agent AI Architecture',
-      'End-to-End Automation',
-      'System Design & Integration',
-      'Problem Solving & Scalability',
+      { label: 'Multi-Agent AI Architecture', icon: multiAgentIcon },
+      { label: 'End-to-End Automation', icon: automationIcon },
+      { label: 'System Design & Integration', icon: systemDesignIcon },
+      { label: 'Problem Solving & Scalability', icon: scalabilityIcon },
     ],
     actions: [
       { label: 'Book a Free Call', href: '#contact', variant: 'primary' },

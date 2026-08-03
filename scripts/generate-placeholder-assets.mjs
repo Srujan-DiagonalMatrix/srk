@@ -13,6 +13,10 @@ const assets = [
     encodedSource: 'scripts/assets/hero-introduction.webp.base64',
     output: 'src/assets/thumbnails/hero-introduction.webp',
   },
+  ...['multi-agent', 'automation', 'system-design', 'scalability'].map((name) => ({
+    encodedSource: `scripts/assets/expertise/${name}.webp.base64`,
+    output: `src/assets/expertise/${name}.webp`,
+  })),
 ]
 
 for (const asset of assets) {
