@@ -327,7 +327,7 @@ p {
 }
 
 .portfolio-showcase {
-  padding-block: clamp(2rem, 4vw, 3.5rem);
+  padding-block: clamp(1.4rem, 2.8vw, 2.45rem) clamp(2rem, 4vw, 3.5rem);
   border-bottom: var(--border-subtle);
   background: #fff;
 }
