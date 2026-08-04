@@ -159,7 +159,7 @@ p {
 
 .nav-link:hover,
 .nav-link--active {
-  color: var(--color-gold);
+  color: var(--color-brand-accent);
 }
 
 .nav-link--active::after {
@@ -169,7 +169,7 @@ p {
   left: 0;
   height: 2px;
   border-radius: var(--radius-pill);
-  background: var(--color-gold);
+  background: var(--color-brand-accent);
   content: '';
 }
 
@@ -194,7 +194,7 @@ p {
   padding: 0.65rem 1rem;
   border-radius: 0.3rem;
   color: #15212c;
-  background: var(--color-gold);
+  background: var(--color-brand-accent);
   font-size: 0.85rem;
   font-weight: 700;
   white-space: nowrap;
@@ -226,7 +226,7 @@ p {
 .hero__copy, .hero__media, .hero__details { grid-column: 1 / span 2; }
 .hero__eyebrow { margin: 0 0 1rem; color: #fff; font-size: clamp(1.45rem, 2vw, 1.8rem); font-weight: 800; line-height: 1.15; letter-spacing: 0.01em; }
 .hero__eyebrow span { display: block; }
-.hero__eyebrow strong { color: #ffab00; }
+.hero__eyebrow strong { color: var(--color-brand-accent); }
 .hero__description { max-width: 38rem; margin-top: 0.75rem; color: rgb(255 255 255 / 88%); font-size: 0.78rem; line-height: 1.55; }
 
 .video-card { width: 100%; margin-top: 0; }
@@ -256,7 +256,7 @@ p {
 .hero__cta { display: inline-flex; gap: 0.4rem; align-items: center; justify-content: center; min-height: 3rem; padding: 0.75rem 0.5rem; border: 1px solid #aab4c0; border-radius: 0.35rem; color: var(--color-navy); background: #fff; box-shadow: 0 0.16rem 0.28rem rgb(11 31 51 / 12%); font-size: 0.78rem; font-weight: 750; text-decoration: none; white-space: nowrap; transition: transform 160ms ease, background-color 160ms ease; }
 .hero__cta svg { width: 1.05rem; height: 1.05rem; }
 .hero__cta:hover { transform: translateY(-2px); }
-.hero__cta--primary { border-color: var(--color-gold); color: #10202e; background: var(--color-gold); }
+.hero__cta--primary { border-color: var(--color-brand-accent); color: #10202e; background: var(--color-brand-accent); }
 .hero__cta { text-transform: uppercase; }
 .hero__cta--text svg:last-child { margin-left: 0.15rem; }
 
@@ -834,7 +834,7 @@ p {
 }
 
 .mobile-nav__link--active {
-  color: var(--color-gold);
+  color: var(--color-brand-accent);
 }
 
 .mobile-nav__cta {
