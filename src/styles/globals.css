@@ -115,9 +115,13 @@ p {
 }
 
 .brand__logo {
-  width: 4rem;
-  height: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
   object-fit: contain;
+}
+
+.site-header .brand__logo {
+  filter: contrast(1.15);
 }
 
 .desktop-nav {
