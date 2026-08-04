@@ -280,7 +280,7 @@ p {
   align-items: start;
   min-height: 7.25rem;
   padding: 1rem 0.85rem;
-  border: 1px solid #eadfca;
+  border: 1px solid var(--color-brand-accent);
   border-radius: 0.55rem;
   color: var(--color-navy);
   background: #fff;
