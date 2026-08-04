@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useState, type CSSProperties, type FormEvent } from 'react'
 import {
   BriefcaseBusiness,
   ChevronDown,
@@ -16,16 +16,12 @@ const countries = ['Australia', 'Canada', 'India', 'Singapore', 'United Kingdom'
 
 export function ContactForm() {
   const [isOpen, setIsOpen] = useState(true)
-  const [isInShowcase, setIsInShowcase] = useState(false)
+  const [panelLeft, setPanelLeft] = useState<number>()
 
   useEffect(() => {
-    const updatePosition = () => {
-      const start = document.querySelector('#portfolio')
-      const end = document.querySelector('#leadership-skills')
-      if (!start || !end) return
-
-      const headerOffset = 72
-      setIsInShowcase(start.getBoundingClientRect().top <= headerOffset && end.getBoundingClientRect().bottom > headerOffset)
+    const alignWithContent = () => {
+      const contentEdge = document.querySelector('.portfolio-showcase__proof')?.getBoundingClientRect().right
+      if (contentEdge) setPanelLeft(contentEdge + 24)
     }
 
     const openFromContactLink = (event: MouseEvent) => {
@@ -33,36 +29,36 @@ export function ContactForm() {
       if (!link) return
       event.preventDefault()
       setIsOpen(true)
-      setIsInShowcase(true)
-      document.querySelector('#portfolio')?.scrollIntoView()
     }
 
-    updatePosition()
-    window.addEventListener('scroll', updatePosition, { passive: true })
-    window.addEventListener('resize', updatePosition)
+    alignWithContent()
+    window.addEventListener('resize', alignWithContent)
     document.addEventListener('click', openFromContactLink)
     return () => {
-      window.removeEventListener('scroll', updatePosition)
-      window.removeEventListener('resize', updatePosition)
+      window.removeEventListener('resize', alignWithContent)
       document.removeEventListener('click', openFromContactLink)
     }
   }, [])
 
   useEffect(() => {
-    if (!isOpen || !isInShowcase) return
+    if (!isOpen) return
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setIsOpen(false)
     }
     document.addEventListener('keydown', closeOnEscape)
     return () => document.removeEventListener('keydown', closeOnEscape)
-  }, [isInShowcase, isOpen])
+  }, [isOpen])
 
   const submitForm = (event: FormEvent<HTMLFormElement>) => event.preventDefault()
 
-  if (!isOpen || !isInShowcase) return null
+  if (!isOpen) return null
+
+  const positionStyle = panelLeft
+    ? ({ '--contact-panel-left': `${panelLeft}px` } as CSSProperties)
+    : undefined
 
   return (
-    <div className="contact-form-overlay" id="contact">
+    <div className="contact-form-overlay" id="contact" style={positionStyle}>
       <aside className="contact-form-panel" aria-labelledby="contact-form-title">
         <button className="contact-form-panel__close" type="button" aria-label="Close contact form" onClick={() => setIsOpen(false)}>
           <X aria-hidden="true" />

@@ -710,7 +710,7 @@ p {
 .contact-callout__action--primary { border-color: #f0ad1d; background: #f6b323; }
 
 .contact-form-overlay { position: fixed; z-index: 90; inset: var(--header-height) 0 0; pointer-events: none; }
-.contact-form-panel { position: absolute; top: clamp(1rem, 7vh, 4.5rem); right: clamp(1rem, 3.5vw, 3.25rem); width: min(20rem, calc(100vw - 2rem)); max-height: calc(100vh - var(--header-height) - 2rem); padding: 1.65rem 1.6rem 1.35rem; overflow-y: auto; border-radius: 0.6rem; color: #17263a; background: #fff; box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%); pointer-events: auto; scrollbar-color: #b8b8b8 transparent; scrollbar-width: thin; }
+.contact-form-panel { position: absolute; top: clamp(1rem, 7vh, 4.5rem); left: min(var(--contact-panel-left, calc(100vw - 23.25rem)), calc(100vw - 21rem)); width: min(20rem, calc(100vw - 2rem)); max-height: calc(100vh - var(--header-height) - 2rem); padding: 1.65rem 1.6rem 1.35rem; overflow-y: auto; border-radius: 0.6rem; color: #17263a; background: #fff; box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%); pointer-events: auto; scrollbar-color: #b8b8b8 transparent; scrollbar-width: thin; }
 .contact-form-panel__close { position: absolute; top: 0.9rem; right: 0.9rem; display: grid; width: 2rem; height: 2rem; padding: 0; border: 0; color: #15283e; background: transparent; cursor: pointer; place-items: center; }
 .contact-form-panel__close svg { width: 1.45rem; }
 .contact-form-panel h2 { margin: 0; padding-right: 1.8rem; font-size: 1.05rem; line-height: 1.35; }
