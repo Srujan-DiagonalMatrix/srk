@@ -2,6 +2,7 @@ import { Header } from '../components/Header'
 import { HeroNavigation } from '../components/HeroNavigation'
 import { HeroSection } from '../components/HeroSection'
 import { PortfolioShowcase } from '../components/PortfolioShowcase'
+import { ContactForm } from '../components/ContactForm'
 
 export function PortfolioPage() {
   return (
@@ -13,6 +14,7 @@ export function PortfolioPage() {
         <HeroNavigation />
         <PortfolioShowcase />
       </main>
+      <ContactForm />
     </div>
   )
 }
