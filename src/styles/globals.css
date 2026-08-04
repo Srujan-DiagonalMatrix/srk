@@ -110,30 +110,52 @@ p {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.625rem;
   color: var(--color-navy);
   text-decoration: none;
 }
 
-.brand__mark {
-  width: 2.35rem;
-  height: 2.35rem;
+.brand__logo {
+  width: 9.5rem;
+  height: auto;
   overflow: visible;
+}
+
+.brand__emblem ellipse,
+.brand__orbit {
   fill: none;
   stroke: var(--color-gold);
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.65;
 }
 
-.brand__mark circle {
-  fill: var(--color-surface);
+.brand__emblem ellipse {
+  stroke-width: 2.4;
+  stroke-dasharray: 0.1 5.2;
 }
 
-.brand__wordmark {
-  font-size: 1.4rem;
-  font-weight: 750;
-  letter-spacing: -0.04em;
+.brand__orbit {
+  stroke-width: 4.6;
+  stroke-dasharray: 0.1 7;
+}
+
+.brand__swoosh {
+  fill: currentColor;
+}
+
+.brand__name {
+  fill: currentColor;
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: -1px;
+}
+
+.brand__surname {
+  fill: var(--color-gold);
+  font-family: var(--font-sans);
+  font-size: 7px;
+  font-weight: 650;
+  letter-spacing: 1.75px;
 }
 
 .desktop-nav {
@@ -878,13 +900,8 @@ p {
   color: #fff;
 }
 
-.site-footer .brand__mark {
-  width: 2.75rem;
-  height: 2.75rem;
-}
-
-.site-footer .brand__mark circle {
-  fill: #071426;
+.site-footer .brand__logo {
+  width: 10.5rem;
 }
 
 .site-footer__contacts {
