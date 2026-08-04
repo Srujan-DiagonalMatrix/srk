@@ -50,6 +50,7 @@
   .mobile-nav__cta { display: inline-flex; }
   .hero__expertise { grid-template-columns: 1fr; }
   .hero__media { grid-template-columns: 1fr; }
+  .hero__media .video-card { transform: none; }
   .hero__supporting { padding: 0.85rem 0 0; border-top: 2px solid #ffab00; border-left: 0; }
   .hero__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
   .hero__cta--text { grid-column: 1 / -1; }
