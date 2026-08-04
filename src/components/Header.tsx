@@ -9,7 +9,17 @@ const DESKTOP_MEDIA_QUERY = '(min-width: 68.75rem)'
 export function Header() {
   const { brand, cta, navigation } = portfolioData.header
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeHref, setActiveHref] = useState(
+    () => window.location.hash || navigation.find((item) => item.isActive)?.href || navigation[0].href,
+  )
   const menuButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    const updateActiveLink = () => setActiveHref(window.location.hash || navigation[0].href)
+
+    window.addEventListener('hashchange', updateActiveLink)
+    return () => window.removeEventListener('hashchange', updateActiveLink)
+  }, [navigation])
 
   useEffect(() => {
     const desktopQuery = window.matchMedia(DESKTOP_MEDIA_QUERY)
@@ -45,9 +55,10 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => (
             <a
-              className={`nav-link${item.isActive ? ' nav-link--active' : ''}`}
+              className={`nav-link${activeHref === item.href ? ' nav-link--active' : ''}`}
               href={item.href}
-              aria-current={item.isActive ? 'page' : undefined}
+              aria-current={activeHref === item.href ? 'page' : undefined}
+              onClick={() => setActiveHref(item.href)}
               key={item.label}
             >
               {item.label}
@@ -83,11 +94,14 @@ export function Header() {
         <div className="mobile-nav__inner">
           {navigation.map((item) => (
             <a
-              className={`mobile-nav__link${item.isActive ? ' mobile-nav__link--active' : ''}`}
+              className={`mobile-nav__link${activeHref === item.href ? ' mobile-nav__link--active' : ''}`}
               href={item.href}
-              aria-current={item.isActive ? 'page' : undefined}
+              aria-current={activeHref === item.href ? 'page' : undefined}
               tabIndex={isMenuOpen ? undefined : -1}
-              onClick={closeMenu}
+              onClick={() => {
+                setActiveHref(item.href)
+                closeMenu()
+              }}
               key={item.label}
             >
               {item.label}
