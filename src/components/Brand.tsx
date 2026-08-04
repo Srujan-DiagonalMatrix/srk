@@ -1,28 +1,26 @@
 type BrandProps = {
   href: string
   name: string
-  logoSrc?: string
 }
 
-function NetworkMark() {
+function SrujanLogo() {
   return (
-    <svg className="brand__mark" viewBox="0 0 42 42" aria-hidden="true">
-      <path d="M9 28 17 10l16 7-4 16-20-5Z" />
-      <path d="m9 28 8-18 12 23m4-16L9 28m8-18 16 7" />
-      <circle cx="17" cy="10" r="3" />
-      <circle cx="33" cy="17" r="3" />
-      <circle cx="29" cy="33" r="3" />
-      <circle cx="9" cy="28" r="3" />
-      <circle cx="21" cy="22" r="2.5" />
+    <svg className="brand__logo" viewBox="0 0 178 54" aria-hidden="true">
+      <g className="brand__emblem">
+        <ellipse cx="27" cy="24" rx="22" ry="16" pathLength="100" />
+        <path className="brand__orbit" d="M8 29c5 11 24 15 38 7" />
+        <path className="brand__swoosh" d="M13 27c9-2 23-8 37-13-9 6-17 12-25 17Z" />
+      </g>
+      <text className="brand__name" x="57" y="31">Srujan</text>
+      <text className="brand__surname" x="59" y="44">A L I K A N T I</text>
     </svg>
   )
 }
 
-export function Brand({ href, name, logoSrc }: BrandProps) {
+export function Brand({ href, name }: BrandProps) {
   return (
     <a className="brand" href={href} aria-label={`${name} home`}>
-      {logoSrc ? <img className="brand__mark" src={logoSrc} alt="" /> : <NetworkMark />}
-      <span className="brand__wordmark">{name}</span>
+      <SrujanLogo />
     </a>
   )
 }
