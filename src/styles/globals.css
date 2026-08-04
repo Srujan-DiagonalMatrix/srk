@@ -710,7 +710,7 @@ p {
 .contact-callout__action--primary { border-color: #f0ad1d; background: #f6b323; }
 
 .portfolio-contact-range { position: relative; }
-.contact-form-overlay { position: absolute; z-index: 40; inset: 0; pointer-events: none; }
+.contact-form-overlay { position: absolute; z-index: 40; inset: 0 0 calc(0rem - clamp(1.75rem, 3.5vw, 2.75rem)); pointer-events: none; }
 .contact-form-panel { position: sticky; top: calc(var(--header-height) + 1rem); width: min(20rem, calc(100vw - 2rem)); max-height: calc(100vh - var(--header-height) - 2rem); margin-left: min(var(--contact-panel-left, calc(100vw - 23.25rem)), calc(100vw - 21rem)); padding: 1.65rem 1.6rem 1.35rem; overflow-y: auto; border-radius: 0.6rem; color: #17263a; background: #fff; box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%); pointer-events: auto; scrollbar-color: #b8b8b8 transparent; scrollbar-width: thin; }
 .contact-form-panel__close { position: absolute; top: 0.9rem; right: 0.9rem; display: grid; width: 2rem; height: 2rem; padding: 0; border: 0; color: #15283e; background: transparent; cursor: pointer; place-items: center; }
 .contact-form-panel__close svg { width: 1.45rem; }
