@@ -58,7 +58,7 @@ export function Header() {
         <div className="site-header__actions">
           <ActionLink className="header-cta" href={cta.href}>
             <span>{cta.label}</span>
-            <ArrowRight aria-hidden="true" size={17} strokeWidth={2.25} />
+            <ArrowRight aria-hidden="true" size={24} strokeWidth={2.25} />
           </ActionLink>
           <button
             ref={menuButtonRef}

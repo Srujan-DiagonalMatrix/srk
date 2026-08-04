@@ -100,8 +100,8 @@ p {
 .site-header__inner {
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 2.25vw, 2.25rem);
-  width: min(100% - (2 * var(--space-page)), var(--content-max-width));
+  gap: clamp(2rem, 4vw, 4rem);
+  width: min(100% - (2 * var(--space-page)), 90rem);
   height: 100%;
   margin-inline: auto;
 }
@@ -141,8 +141,8 @@ p {
   align-self: stretch;
   flex: 1 1 auto;
   align-items: center;
-  justify-content: flex-end;
-  gap: clamp(0.95rem, 1.6vw, 1.5rem);
+  justify-content: space-between;
+  gap: clamp(1.5rem, 2.8vw, 3.5rem);
 }
 
 .nav-link {
@@ -150,9 +150,9 @@ p {
   display: inline-flex;
   align-items: center;
   height: 100%;
-  color: #34414d;
-  font-size: 0.855rem;
-  font-weight: 560;
+  color: var(--color-navy);
+  font-size: 1.125rem;
+  font-weight: 650;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -165,7 +165,7 @@ p {
 .nav-link--active::after {
   position: absolute;
   right: 0;
-  bottom: 0.72rem;
+  bottom: 1.1rem;
   left: 0;
   height: 2px;
   border-radius: var(--radius-pill);
@@ -199,6 +199,13 @@ p {
   font-weight: 700;
   white-space: nowrap;
   transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.header-cta {
+  min-height: 3.375rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 0.35rem;
+  font-size: 1.125rem;
 }
 
 .hero {
