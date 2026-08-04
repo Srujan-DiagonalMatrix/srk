@@ -262,7 +262,6 @@ p {
 
 .hero-navigation {
   padding-block: 1.5rem;
-  border-bottom: var(--border-subtle);
   background: var(--color-surface);
 }
 
@@ -328,8 +327,12 @@ p {
 
 .portfolio-showcase {
   padding-block: clamp(2rem, 4vw, 3.5rem);
-  border-bottom: var(--border-subtle);
   background: #fff;
+}
+
+#portfolio,
+#results {
+  background: var(--color-section-alternate);
 }
 
 .portfolio-showcase__heading {
@@ -499,8 +502,7 @@ p {
 
 .core-skills {
   padding-block: clamp(2rem, 3.5vw, 3rem);
-  border-bottom: var(--border-subtle);
-  background: #fff;
+  background: var(--color-section-alternate);
 }
 
 .core-skills h2 {
@@ -559,7 +561,6 @@ p {
 
 .featured-case-studies {
   padding-block: clamp(2rem, 3.5vw, 3rem);
-  border-bottom: var(--border-subtle);
   background: #fff;
 }
 
@@ -613,8 +614,7 @@ p {
 
 .leadership-customer-skills {
   padding-block: clamp(2rem, 3.5vw, 3rem);
-  border-bottom: var(--border-subtle);
-  background: #f8f9fa;
+  background: var(--color-section-alternate);
 }
 
 .leadership-customer-skills h2 {
