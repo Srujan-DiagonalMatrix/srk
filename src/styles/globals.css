@@ -343,7 +343,7 @@ p {
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .portfolio-showcase__heading > span {
@@ -416,7 +416,7 @@ p {
   letter-spacing: -0.02em;
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .capability-pillars h2::after {
@@ -517,7 +517,7 @@ p {
   line-height: 1.3;
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .core-skills__scroller:focus-visible {
@@ -578,7 +578,7 @@ p {
   line-height: 1.3;
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .featured-case-studies__grid {
@@ -633,7 +633,7 @@ p {
   line-height: 1.3;
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .leadership-customer-skills__grid {
@@ -698,7 +698,7 @@ p {
   font-size: clamp(1.35rem, 2.2vw, 1.65rem);
   line-height: 1.25;
   text-transform: uppercase;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .contact-callout p {
