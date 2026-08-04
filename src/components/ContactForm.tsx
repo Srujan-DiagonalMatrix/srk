@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import {
   BriefcaseBusiness,
   ChevronDown,
@@ -17,7 +17,6 @@ const countries = ['Australia', 'Canada', 'India', 'Singapore', 'United Kingdom'
 export function ContactForm() {
   const [isOpen, setIsOpen] = useState(true)
   const [isInShowcase, setIsInShowcase] = useState(false)
-  const dialogRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const updatePosition = () => {
@@ -64,8 +63,7 @@ export function ContactForm() {
 
   return (
     <div className="contact-form-overlay" id="contact">
-      <button className="contact-form-overlay__backdrop" type="button" aria-label="Close contact form" onClick={() => setIsOpen(false)} />
-      <aside ref={dialogRef} className="contact-form-panel" role="dialog" aria-modal="true" aria-labelledby="contact-form-title">
+      <aside className="contact-form-panel" aria-labelledby="contact-form-title">
         <button className="contact-form-panel__close" type="button" aria-label="Close contact form" onClick={() => setIsOpen(false)}>
           <X aria-hidden="true" />
         </button>
