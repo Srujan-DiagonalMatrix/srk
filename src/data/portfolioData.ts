@@ -250,4 +250,17 @@ export const portfolioData = {
       href: '#contact',
     },
   },
+  footer: {
+    brand: {
+      name: 'Srujan',
+      href: '#home',
+    },
+    contact: [
+      { label: '+91 98765 43210', href: 'tel:+919876543210', icon: 'phone' },
+      { label: 'srujan.ai.dev@gmail.com', href: 'mailto:srujan.ai.dev@gmail.com', icon: 'email' },
+      { label: 'Bengaluru, India', icon: 'location' },
+      { label: 'linkedin.com/in/srujan-ai', href: 'https://www.linkedin.com/in/srujan-ai', icon: 'linkedin' },
+    ],
+    copyright: '© 2026 Srujan. All rights reserved.',
+  },
 } as const
