@@ -374,6 +374,9 @@ p {
 .portfolio-showcase .video-card { position: relative; }
 .portfolio-showcase__feature > p { max-width: none; margin: 0.75rem 0 0; color: #344250; font-size: 0.76rem; line-height: 1.55; }
 .portfolio-showcase__feature .portfolio-showcase__detail { margin-top: 0.35rem; color: #5a6570; }
+#portfolio .portfolio-showcase__feature > p { color: #74798b; }
+#portfolio .portfolio-showcase__feature .portfolio-showcase__detail { position: relative; margin-top: 0.85rem; padding-left: 1.2rem; color: #263442; line-height: 1.65; }
+#portfolio .portfolio-showcase__feature .portfolio-showcase__detail::before { position: absolute; top: 0; left: 0; color: #e5a21a; content: '✓'; font-weight: 700; }
 .portfolio-showcase__link { display: inline-flex; gap: 0.35rem; align-items: center; margin-top: 0.55rem; color: #d79712; font-size: 0.74rem; font-weight: 750; text-decoration: none; }
 .portfolio-showcase__link svg { width: 0.9rem; }
 
