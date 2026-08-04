@@ -339,7 +339,10 @@ p {
   display: flex;
   gap: 0.75rem;
   align-items: baseline;
+  justify-content: center;
   margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .portfolio-showcase__heading > span {
@@ -511,6 +514,7 @@ p {
   font-size: clamp(1.05rem, 1.55vw, 1.3rem);
   line-height: 1.3;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .core-skills__scroller:focus-visible {
@@ -570,6 +574,7 @@ p {
   font-size: clamp(1.05rem, 1.55vw, 1.3rem);
   line-height: 1.3;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .featured-case-studies__grid {
@@ -623,6 +628,7 @@ p {
   font-size: clamp(1.05rem, 1.55vw, 1.3rem);
   line-height: 1.3;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .leadership-customer-skills__grid {
@@ -686,6 +692,7 @@ p {
   color: var(--color-navy);
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .contact-callout p {
