@@ -709,6 +709,31 @@ p {
 .contact-callout__action:hover { border-color: var(--color-gold); box-shadow: 0 0.45rem 1rem rgb(11 31 51 / 10%); transform: translateY(-2px); }
 .contact-callout__action--primary { border-color: #f0ad1d; background: #f6b323; }
 
+.portfolio-contact-range { position: relative; }
+.contact-form-overlay { position: absolute; z-index: 40; inset: 0 0 clamp(2rem, 3.5vw, 3rem); pointer-events: none; }
+.contact-form-panel { position: sticky; top: calc(var(--header-height) + 1rem); width: min(20rem, calc(100vw - 2rem)); max-height: calc(100vh - var(--header-height) - 2rem); margin-left: min(var(--contact-panel-left, calc(100vw - 23.25rem)), calc(100vw - 21rem)); padding: 1.65rem 1.6rem 1.35rem; overflow-y: auto; border-radius: 0.6rem; color: #17263a; background: #fff; box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%); pointer-events: auto; scrollbar-color: #b8b8b8 transparent; scrollbar-width: thin; }
+.contact-form-panel__close { position: absolute; top: 0.9rem; right: 0.9rem; display: grid; width: 2rem; height: 2rem; padding: 0; border: 0; color: #15283e; background: transparent; cursor: pointer; place-items: center; }
+.contact-form-panel__close svg { width: 1.45rem; }
+.contact-form-panel h2 { margin: 0; padding-right: 1.8rem; font-size: 1.05rem; line-height: 1.35; }
+.contact-form-panel > p { margin: 0.55rem 0 1.1rem; color: #526075; font-size: 0.72rem; font-weight: 600; line-height: 1.5; }
+.contact-form-panel form { display: grid; gap: 0.85rem; }
+.contact-form-panel label { display: grid; gap: 0.35rem; color: #26364b; font-size: 0.68rem; font-weight: 700; }
+.contact-form-panel label b { color: #e3352f; }
+.contact-form-panel__control { display: flex; align-items: center; min-height: 2.3rem; border: 1px solid #d5dae0; border-radius: 0.25rem; background: #fff; }
+.contact-form-panel__control:focus-within { border-color: var(--color-gold); box-shadow: 0 0 0 2px rgb(200 155 60 / 15%); }
+.contact-form-panel__control > svg { flex: 0 0 auto; width: 1rem; height: 1rem; margin-left: 0.65rem; color: #69768a; }
+.contact-form-panel__control input, .contact-form-panel__control select, .contact-form-panel__control textarea { width: 100%; min-width: 0; padding: 0.55rem 0.65rem; border: 0; outline: 0; color: #25354a; background: transparent; font-size: 0.7rem; font-weight: 500; }
+.contact-form-panel__control input::placeholder, .contact-form-panel__control textarea::placeholder { color: #657186; opacity: 1; }
+.contact-form-panel__select select { appearance: none; color: #657186; }
+.contact-form-panel__select > svg:last-child { margin: 0 0.6rem 0 0; }
+.contact-form-panel__textarea { align-items: flex-start; }
+.contact-form-panel__textarea > svg { margin-top: 0.65rem; }
+.contact-form-panel__textarea textarea { min-height: 3.7rem; resize: vertical; }
+.contact-form-panel__submit { display: inline-flex; gap: 0.7rem; align-items: center; justify-content: center; min-height: 2.65rem; padding: 0.65rem 1rem; border: 0; border-radius: 0.28rem; color: #14263a; background: #ffb400; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.035em; cursor: pointer; }
+.contact-form-panel__submit svg { width: 1rem; }
+.contact-form-panel__privacy { display: flex; gap: 0.7rem; align-items: flex-start; margin-top: 0.95rem; color: #506076; font-size: 0.68rem; line-height: 1.45; }
+.contact-form-panel__privacy svg { flex: 0 0 auto; width: 0.9rem; margin-top: 0.1rem; }
+
 .video-modal { position: fixed; z-index: 100; inset: 0; display: grid; padding: 1.5rem; background: rgb(5 14 23 / 82%); place-items: center; }
 .video-modal__dialog { width: min(58rem, 100%); overflow: hidden; border-radius: 0.75rem; background: #fff; box-shadow: 0 2rem 5rem rgb(0 0 0 / 40%); }
 .video-modal__header { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; }

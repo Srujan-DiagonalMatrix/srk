@@ -13,6 +13,7 @@ import { portfolioData } from '../data/portfolioData'
 import { CapabilityPillars } from './CapabilityPillars'
 import { CoreSkills } from './CoreSkills'
 import { ContactCallout } from './ContactCallout'
+import { ContactForm } from './ContactForm'
 import { FeaturedCaseStudies } from './FeaturedCaseStudies'
 import { LeadershipCustomerSkills } from './LeadershipCustomerSkills'
 import { VideoCard } from './VideoCard'
@@ -94,14 +95,17 @@ function ShowcaseSection({ data, id, number }: ShowcaseSectionProps) {
 export function PortfolioShowcase() {
   return (
     <>
-      <ShowcaseSection data={portfolioData.portfolioShowcase} id="portfolio" number="01" />
-      <ShowcaseSection data={portfolioData.problemSolvingShowcase} id="process" number="02" />
-      <ShowcaseSection data={portfolioData.resultsShowcase} id="results" number="03" />
-      <ShowcaseSection data={portfolioData.trustShowcase} id="about" number="04" />
-      <CapabilityPillars />
-      <CoreSkills />
-      <FeaturedCaseStudies />
-      <LeadershipCustomerSkills />
+      <div className="portfolio-contact-range">
+        <ShowcaseSection data={portfolioData.portfolioShowcase} id="portfolio" number="01" />
+        <ShowcaseSection data={portfolioData.problemSolvingShowcase} id="process" number="02" />
+        <ShowcaseSection data={portfolioData.resultsShowcase} id="results" number="03" />
+        <ShowcaseSection data={portfolioData.trustShowcase} id="about" number="04" />
+        <CapabilityPillars />
+        <CoreSkills />
+        <FeaturedCaseStudies />
+        <LeadershipCustomerSkills />
+        <ContactForm />
+      </div>
       <ContactCallout />
     </>
   )

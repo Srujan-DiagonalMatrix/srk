@@ -34,7 +34,7 @@ export function LeadershipCustomerSkills() {
   const [activeSkill, setActiveSkill] = useState<(typeof skillsInAction)[number] | null>(null)
 
   return (
-    <section className="leadership-customer-skills" aria-labelledby="leadership-skills-title">
+    <section className="leadership-customer-skills" id="leadership-skills" aria-labelledby="leadership-skills-title">
       <div className="content-container">
         <h2 id="leadership-skills-title">Leadership &amp; Customer skills in Action</h2>
         <div className="leadership-customer-skills__grid">
