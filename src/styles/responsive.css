@@ -14,9 +14,10 @@
 }
 
 @media (max-width: 48rem) {
-  .hero { aspect-ratio: auto; background-position: top center; background-size: 100% auto; }
-  .hero__inner { grid-template-columns: 1fr; grid-template-rows: auto; gap: 1.75rem; }
+  .hero { min-height: 0; background-position: top center; background-size: auto 100%; }
+  .hero__inner { display: grid; min-height: 0; grid-template-columns: 1fr; grid-template-rows: auto; gap: 1.75rem; }
   .hero__copy, .hero__media, .hero__details { grid-row: auto; grid-column: 1; }
+  .hero__copy, .hero__media, .hero__details { width: 100%; }
   .hero__media { width: min(100%, 34rem); }
   .hero__expertise { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero__expertise li { font-size: 0.72rem; }
