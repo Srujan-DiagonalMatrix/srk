@@ -6,6 +6,10 @@ const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
 const assets = [
   {
+    encodedSource: 'scripts/assets/logo_srujan.webp.base64',
+    output: 'src/assets/logo_srujan.webp',
+  },
+  {
     encodedSource: 'scripts/assets/srujan-portrait.webp.base64',
     output: 'src/assets/portrait/srujan-portrait.webp',
   },

@@ -110,30 +110,18 @@ p {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.625rem;
   color: var(--color-navy);
   text-decoration: none;
 }
 
-.brand__mark {
-  width: 2.35rem;
-  height: 2.35rem;
-  overflow: visible;
-  fill: none;
-  stroke: var(--color-gold);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.65;
+.brand__logo {
+  width: 4.4rem;
+  height: 4.4rem;
+  object-fit: contain;
 }
 
-.brand__mark circle {
-  fill: var(--color-surface);
-}
-
-.brand__wordmark {
-  font-size: 1.4rem;
-  font-weight: 750;
-  letter-spacing: -0.04em;
+.site-header .brand__logo {
+  filter: contrast(1.15);
 }
 
 .desktop-nav {
@@ -878,13 +866,9 @@ p {
   color: #fff;
 }
 
-.site-footer .brand__mark {
-  width: 2.75rem;
-  height: 2.75rem;
-}
-
-.site-footer .brand__mark circle {
-  fill: #071426;
+.site-footer .brand__logo {
+  width: 5.5rem;
+  height: 5.5rem;
 }
 
 .site-footer__contacts {
