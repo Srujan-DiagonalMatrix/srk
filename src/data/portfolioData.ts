@@ -23,7 +23,7 @@ export const portfolioData = {
     description:
       'I design and deliver multi-agent AI solutions that streamline operations, reduce manual effort, and create measurable business impact.',
     supportingText:
-      'See how I design, build and integrate multi-agent systems that think, decide and act — with real deployment examples.',
+      'SEE HOW I DESIGN, BUILD AND INTEGRATE MULTI-AGENT SYSTEMS THAT THINK, DECIDE AND ACT — WITH REAL DEPLOYMENT EXAMPLES.',
     expertise: [
       { highlight: 'Agentic AI', detail: 'Architecture & Orchestration', icon: 'architecture' },
       { highlight: 'Tool Calling,', detail: 'MCP & Enterprise Integration', icon: 'tools' },
