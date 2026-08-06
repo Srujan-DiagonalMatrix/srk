@@ -28,9 +28,14 @@
 }
 
 @media (max-width: 68.749rem) {
+  :root { --header-height: 4.5rem; }
   .desktop-nav { display: none; }
   .site-header__actions { margin-left: auto; }
   .menu-button { display: grid; }
+}
+
+@media (min-width: 68.75rem) {
+  .site-header .brand { display: none; }
 }
 
 @media (max-width: 37.5rem) {
